@@ -15,6 +15,7 @@ function sendAjax() {
 		mimeType: 'application/json',
 		
 		success: function (data) {
+			
         	$("tr:has(td)").remove();
 
         	$.each(data, function (index, article) {
